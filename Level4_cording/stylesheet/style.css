@@ -1,0 +1,295 @@
+﻿@charset "utf-8";
+
+body {
+  font-size: 87.5%;
+  line-height: 1.5;
+  margin: 0;
+}
+header, nav, #contents, #wrap, footer section, footer #foot {
+  margin: 0 auto 0 auto;
+  width: 1260px;
+}
+header h1 {
+  margin: 0;
+  padding-top: 0;
+  text-align: left;
+}
+header ul {
+  text-align: right;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding-left: 0;
+}
+header ul li {
+  display: inline;
+  vertical-align: middle;
+  margin-left: 30px;
+  margin-top: 0;
+}
+header ul li a {
+  color: #262e73;
+}
+header ul li img {
+  display: inline;
+  vertical-align: bottom;
+}
+header input {
+  height: 30px;
+  vertical-align: middle;
+}
+nav ul {
+  overflow: hidden;
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+  text-align: center;
+}
+nav ul li {
+  float: left;
+  width: 251.5px;
+  background-color: #262e73;
+  border-left: 0.5px solid white;
+}
+nav ul li:first-child {
+  border-left: 0.5px solid #262e73;
+}
+nav ul li a {
+  overflow: hidden;
+  display: block;
+  color: white;
+  padding-top: 10px;
+  height: 25px;
+  text-decoration: none;
+  border-bottom: 10px solid #262e73;
+  border-top: 10px solid #262e73;
+  font-weight: bold;
+}
+#wrap .thumbnail-list {
+  padding: 0;
+  margin: 0;
+}
+#wrap ul {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+  text-align: center;
+}
+#wrap ul li {
+  float: left;
+}
+#wrap ul li {
+  padding-top: 0;
+  margin-top: 0;
+  border-top: 0;
+}
+.slide-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+}
+.prev-arrow {
+  left: 10px;
+}
+.next-arrow {
+  right: 10px;
+}
+#contents {
+  overflow: hidden;
+}
+#main {
+  float: right;
+  width: 860px;
+}
+#main table h3 {
+  display: block;
+  text-align: left;
+  height: 30px;
+  width: 350px;
+  padding-top: 10px;
+  color: #262e73;
+  padding-left: 10px;
+  border-bottom: 1px solid #288092;
+  border-left: 20px solid #288092;
+  border-right: 50px solid white;
+}
+#main table{
+  float: left;
+  margin-bottom: 20px;
+}
+#main table tr {
+  height: 50px;
+  color: #262e73;
+}
+#main table tr td a {
+  text-decoration: none;
+  color: #262e73;
+  padding-right: 60px;
+}
+#nav ul {
+  margin: 0 0 20px 0;
+  padding-left: 0;
+  padding-bottom: 30px;
+  list-style-type: none;
+  text-align: center;
+}
+#nav .sintyaku a {
+  background-color: #262e73;
+}
+#nav ul li a {
+  display: inline-block;
+  color: white;
+  float: left;
+  width: 214px;
+  background-color: #dcdee6;
+  height: 40px;
+  text-decoration: none;
+  border-left: 0.5px solid white;
+  border-bottom: 2px solid #262e73;
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+#nav ul li a:hover {
+  background-color: #262e73;
+}
+#news dl  {
+  width: 860px;
+
+}
+#news dl dt {
+  float: left;
+  clear: left;
+  width: 120px;
+  vertical-align: top;
+  margin-top: 40px;
+}
+#news dl dt time {
+  display: inline-block;
+}
+#news dl dd {
+  float: left;
+  width: 700px;
+  margin-top: 40px;
+  vertical-align: top;
+}
+#news dl dd span {
+  display: inline-block;
+  height: 20px;
+  text-align: center;
+  vertical-align: top;
+  font-weight: bold;
+}
+#news dl dd a {
+  display: inline-block;
+  padding-left: 20px;
+  color: #262e73;
+}
+.osirase {
+  background-color: #15b4e5;
+  color: white;
+  width: 9em;
+}
+.campaign {
+  background-color: #c94e49;
+  color: white;
+  width: 9em;
+}
+.newsrelease {
+  background-color: #fbc529;
+  color: white;
+  width: 9em;
+}
+#sub {
+  float: left;
+  width: 360px;
+  text-align: center;
+}
+#sub h2 {
+  color: navy;
+  margin-top: 50px;
+}
+#sub p a {
+  color: #262e73;
+}
+#sub #servis a {
+  display: table-cell;
+  float: left;
+  margin: 0;
+  padding-top: 35px;
+  height: 80px;
+  width: 113px;
+  background-color: #288092;
+  text-decoration: none;
+  border: solid;
+}
+#sub ul {
+  overflow: hidden;
+  margin-top: 20px;
+  padding-left: 0;
+  list-style-type: none;
+  text-align: center;
+}
+#sub ul li {
+  width: 360px;
+}
+#sub ul li a {
+  overflow: hidden;
+  display: block;
+  color: white;
+  margin-top: 20px;
+  padding-top: 15px;
+  height: 35px;
+  text-decoration: none;
+  font-weight: bold;
+}
+#login a, #kouza a, #kinyu a, #sagi a {
+  background-color: #262e73;
+}
+#first a, #tv a, #kyouiku a {
+  background-color: #98be26;
+}
+footer table {
+  background-color: #dcdee6;
+  margin: 10px 0 20px 0;
+  padding: 30px 0 60px 30px;
+  width: 1260px;
+  height: 300px;
+}
+footer table tr th {
+  font-size: 120%;
+  color: #262e73;
+  text-align: left;
+  width: 240px;
+  margin-bottom: 10px;
+}
+footer table tr td {
+  padding-top: 5px;
+}
+footer table tr td a {
+  padding-top: 10px;
+  color: #262e73;
+}
+footer ul {
+  margin: 0 0 20px 0;
+  padding-left: 0;
+  padding-bottom: 30px;
+  list-style-type: none;
+  text-align: center;
+  }
+footer ul li {
+  float: left;
+  width: 252px;
+  display: inline-block;
+}
+footer ul li a {
+  color: #262e73;
+}
+footer p {
+  clear: both;
+  background-color: #262e73;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 5px;
+  height: 27px;
+}
