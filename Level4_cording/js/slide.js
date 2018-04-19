@@ -38,3 +38,28 @@ $(function(){
     $(thumbnailItem+'[data-index="'+nextSlide+'"]').addClass("thumbnail-current").removeClass("filter").css("filter","brightness(1)");
   });
 });
+
+
+//タブ//
+$(function(){
+    $('#news div[id != "tab1"]').hide();
+
+    // タブをクリックすると
+    $("a").click(function(){
+        // 一度全てのコンテンツを非表示にする
+        $("#news div").hide();
+
+        // 次に選択されたコンテンツを再表示する
+        $($(this).attr("href")).show();
+
+        // 現在のcurrentクラスを削除
+        $(".current").removeClass("current");
+
+        // 選択されたタブ（自分自身）にcurrentクラスを追加
+        $(this).addClass("current");
+
+
+        return false;
+    });
+
+});

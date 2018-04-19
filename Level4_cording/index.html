@@ -19,10 +19,8 @@
     <div class="b">
       <ul>
         <li>金融機関コード:0917</li>
-        <li>文字サイズ<a href="index.html"><img src="images/fontsize_s.png" alt="小"></a>　
-        <a href="index.html"><img src="images/fontsize_m.png" alt="中"></a>　
-        <a href="index.html"><img src="images/fontsize_l.png" alt="大"></a></li>
-        <li><input type="search" name="q" placeholder="検索ワードを入力"><input type="image" src="images/search.png" alt="検索"></li>
+        <li>文字サイズ<a href="index.html"><img src="images/fontsize_s.png" alt="小"></a><a href="index.html"><img src="images/fontsize_m.png" alt="中"></a><a href="index.html"><img src="images/fontsize_l.png" alt="大"></a></li>
+        <li><input type="search" name="q" placeholder="検索ワードを入力" id="search"><input type="image" src="images/search.png" alt="検索" id="musi"></li>
       </ul>
     </div>
   </header>
@@ -96,45 +94,87 @@
           <td colspan="2"><a href="index.html">＞海外現地採用</a></td>
         </tr>
       </table>
-      <div id="nav">
+      <div id="tab">
         <ul>
-          <li class="sintyaku"><h3><a href="index.html">新着情報</a></h3></li>
-          <li><h3><a href="index.html">ニュースリリース</a></h3></li>
-          <li><h3><a href="index.html">キャンペーン</a></h3></li>
-          <li><h3><a href="index.html">お知らせ</a></h3></li>
+          <li><h3><a href="#tab1" class="current">新着情報</a></h3></li>
+          <li><h3><a href="#tab2" class="">ニュースリリース</a></h3></li>
+          <li><h3><a href="#tab3" class="">キャンペーン</a></h3></li>
+          <li><h3><a href="#tab4" class="">お知らせ</a></h3></li>
         </ul>
       </div>
       <div id="news">
-      <dl>
-        <dt><time datetime="2015-06-10">2015年6月10日</time></dt>
-          <dd><span class="osirase">お知らせ</span>
-          <a href="index.html">【インターネットバンキング】パスワード等を入力させる偽メールが届いても、<br>絶対に入力しないでください!</a></dd>
-        <dt><time datetime="2015-05-10">2015年5月10日</time></dt>
-          <dd><span class="campaign">キャンペーン</span>
-          <a href="index.html">抽選で200人に1万円が当たる!夏の資産運用キャンペーン実施中。</a></dd>
-        <dt><time datetime="2015-04-10">2015年4月10日</time></dt>
-          <dd><span class="campaign">キャンペーン</span>
-          <a href="index.html">平成27年5月25日（月）より「子ども口座開設キャンペーン」を開始します。</a></dd>
-        <dt><time datetime="2015-03-10">2015年3月10日</time></dt>
-          <dd><span class="osirase">お知らせ</span>
-          <a href="index.html">「年金情報流出」を口実にした振り込め詐欺や個人情報の搾取にご注意ください。</a></dd>
-        <dt><time datetime="2015-02-10">2015年2月10日</time></dt>
-          <dd><span class="newsrelease">ニュースリリース</span>
-          <a href="index.html">スウェーデンセラク銀行〇〇支店改行うについてpdf(97KB)</a></dd>
-        <dt><time datetime="2015-01-10">2015年1月10日</time></dt>
-          <dd><span class="osirase">お知らせ</span>
-          <a href="index.html">お客様の情報のSRKグループでの共同利用について</a></dd>
-        <dt><time datetime="2014-12-10">2014年12月10日</time></dt>
-          <dd><span class="osirase">お知らせ</span>
-          <a href="index.html">LINE公式アカウントを開設しました!</a></dd>
-        <dt><time datetime="2014-11-10">2014年11月10日</time></dt>
-          <dd><span class="newsrelease">ニュースリリース</span>
-          <a href="index.html">【セラクダイレクト】ワンタイムパスワードの提供開始についてpdf(130KB)</a></dd>
-        <dt><time datetime="2014-10-10">2014年10月10日</time></dt>
-          <dd><span class="campaign">キャンペーン</span>
-          <a href="index.html">抽選でカタログギフトが当たる!保険の見直しキャンペーン実施中</a></dd>
-      </dl>
-    </div>
+        <div id="tab1">
+          <dl>
+            <dt><time datetime="2015-06-10">2015年6月10日</time></dt>
+            <dd><span class="osirase">お知らせ</span>
+              <a href="index.html">【インターネットバンキング】パスワード等を入力させる偽メールが届いても、<br>絶対に入力しないでください!</a></dd>
+            <dt><time datetime="2015-05-10">2015年5月10日</time></dt>
+            <dd><span class="campaign">キャンペーン</span>
+              <a href="index.html">抽選で200人に1万円が当たる!夏の資産運用キャンペーン実施中。</a></dd>
+            <dt><time datetime="2015-04-10">2015年4月10日</time></dt>
+            <dd><span class="campaign">キャンペーン</span>
+              <a href="index.html">平成27年5月25日（月）より「子ども口座開設キャンペーン」を開始します。</a></dd>
+            <dt><time datetime="2015-03-10">2015年3月10日</time></dt>
+            <dd><span class="osirase">お知らせ</span>
+              <a href="index.html">「年金情報流出」を口実にした振り込め詐欺や個人情報の搾取にご注意ください。</a></dd>
+            <dt><time datetime="2015-02-10">2015年2月10日</time></dt>
+            <dd><span class="newsrelease">ニュースリリース</span>
+              <a href="index.html">スウェーデンセラク銀行〇〇支店改行うについてpdf(97KB)</a></dd>
+            <dt><time datetime="2015-01-10">2015年1月10日</time></dt>
+            <dd><span class="osirase">お知らせ</span>
+              <a href="index.html">お客様の情報のSRKグループでの共同利用について</a></dd>
+            <dt><time datetime="2014-12-10">2014年12月10日</time></dt>
+            <dd><span class="osirase">お知らせ</span>
+              <a href="index.html">LINE公式アカウントを開設しました!</a></dd>
+            <dt><time datetime="2014-11-10">2014年11月10日</time></dt>
+            <dd><span class="newsrelease">ニュースリリース</span>
+              <a href="index.html">【セラクダイレクト】ワンタイムパスワードの提供開始についてpdf(130KB)</a></dd>
+            <dt><time datetime="2014-10-10">2014年10月10日</time></dt>
+            <dd><span class="campaign">キャンペーン</span>
+              <a href="index.html">抽選でカタログギフトが当たる!保険の見直しキャンペーン実施中</a></dd>
+          </dl>
+        </div>
+        <div id="tab2">
+          <dl>
+            <dt><time datetime="2015-02-10">2015年2月10日</time></dt>
+            <dd><span class="newsrelease">ニュースリリース</span>
+              <a href="index.html">スウェーデンセラク銀行〇〇支店改行うについてpdf(97KB)</a></dd>
+            <dt><time datetime="2014-11-10">2014年11月10日</time></dt>
+            <dd><span class="newsrelease">ニュースリリース</span>
+              <a href="index.html">【セラクダイレクト】ワンタイムパスワードの提供開始についてpdf(130KB)</a></dd>
+
+          </dl>
+        </div>
+        <div id="tab3">
+          <dl>
+            <dt><time datetime="2015-05-10">2015年5月10日</time></dt>
+            <dd><span class="campaign">キャンペーン</span>
+              <a href="index.html">抽選で200人に1万円が当たる!夏の資産運用キャンペーン実施中。</a></dd>
+            <dt><time datetime="2015-04-10">2015年4月10日</time></dt>
+            <dd><span class="campaign">キャンペーン</span>
+              <a href="index.html">平成27年5月25日（月）より「子ども口座開設キャンペーン」を開始します。</a></dd>
+            <dt><time datetime="2011-10-10">2014年10月10日</time></dt>
+            <dd><span class="campaign">キャンペーン</span>
+              <a href="index.html">抽選でカタログギフトが当たる!保険の見直しキャンペーン実施中</a></dd>
+          </dl>
+        </div>
+        <div id="tab4">
+          <dl>
+            <dt><time datetime="2015-06-10">2015年6月10日</time></dt>
+            <dd><span class="osirase">お知らせ</span>
+              <a href="index.html">【インターネットバンキング】パスワード等を入力させる偽メールが届いても、<br>絶対に入力しないでください!</a></dd>
+            <dt><time datetime="2015-03-10">2015年3月10日</time></dt>
+            <dd><span class="osirase">お知らせ</span>
+              <a href="index.html">「年金情報流出」を口実にした振り込め詐欺や個人情報の搾取にご注意ください。</a></dd>
+            <dt><time datetime="2015-01-10">2015年1月10日</time></dt>
+            <dd><span class="osirase">お知らせ</span>
+              <a href="index.html">お客様の情報のSRKグループでの共同利用について</a></dd>
+            <dt><time datetime="2014-12-10">2014年12月10日</time></dt>
+            <dd><span class="osirase">お知らせ</span>
+              <a href="index.html">LINE公式アカウントを開設しました!</a></dd>
+          </dl>
+        </div>
+      </div>
     </div>
     <div id="sub">
       <aside>
@@ -147,12 +187,12 @@
           <p><a href="index.html"><small>＞パスワードを忘れた方はこちら</small></a></p>
         <h2>サービスのご案内</h2>
           <ul id="servis">
-            <li><a href="index.html">店舗<br>･<br>ATM検索</a></li>
-            <li><a href="index.html">資料請求</a></li>
-            <li><a href="index.html">金利一覧</a></li>
-            <li><a href="index.html">手数料</a></li>
-            <li><a href="index.html">よくある<br>ご質問</a></li>
-            <li><a href="index.html">投資信託基準<br>価格一覧</a></li>
+            <li><a href="index.html" class="a">店舗<br>･<br>ATM検索</a></li>
+            <li><a href="index.html" class="b">資料請求</a></li>
+            <li><a href="index.html" class="b">金利一覧</a></li>
+            <li><a href="index.html" class="b">手数料</a></li>
+            <li><a href="index.html" class="c">よくある<br>ご質問</a></li>
+            <li><a href="index.html" class="c">投資信託基準<br>価格一覧</a></li>
           </ul>
         <ul id="navy">
           <li id="kouza"><a href="index.html">口座開設のご案内</a></li>

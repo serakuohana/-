@@ -5,6 +5,9 @@ body {
   line-height: 1.5;
   margin: 0;
 }
+body ul {
+  padding-left: 0;
+}
 header, nav, #contents, #wrap, footer div table, footer #foot {
   margin: 0 auto 0 auto;
   width: 1260px;
@@ -13,6 +16,9 @@ header h1 {
   margin: 0;
   padding-top: 0;
   text-align: left;
+}
+.site {
+  padding-right: 40px;
 }
 header ul {
   text-align: right;
@@ -30,13 +36,18 @@ header ul li {
 header ul li a {
   color: #262e73;
 }
+header ul li a:hover {
+  color: #98be26;
+}
 header ul li img {
   display: inline;
   vertical-align: bottom;
+  margin-left: 10px;
 }
-header input {
+ header input {
   height: 30px;
-  vertical-align: middle;
+  vertical-align: top;
+  text-align: center;
 }
 nav ul {
   overflow: hidden;
@@ -47,13 +58,9 @@ nav ul {
 }
 nav ul li {
   float: left;
-  width: 251.5px;
-  background-color: #262e73;
-  border-left: 0.5px solid white;
+  width: 252px;
 }
-nav ul li:first-child {
-  border-left: 0.5px solid #262e73;
-}
+
 nav ul li a {
   overflow: hidden;
   display: block;
@@ -61,15 +68,21 @@ nav ul li a {
   padding-top: 10px;
   height: 25px;
   text-decoration: none;
+  background-color: #262e73;
+  border-left: 0.5px solid white;
   border-bottom: 10px solid #262e73;
   border-top: 10px solid #262e73;
   font-weight: bold;
 }
+nav ul li a:hover {
+  opacity: 0.7;
+}
 #wrep ul li {
   padding-left: 0;
 }
-ul #slider {
-  padding-left: 0;
+#slider {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
   text-align: center;
 }
@@ -77,7 +90,7 @@ ul li #slider {
   padding-left: 0;
 }
 #thumbnail-list ul li {
-  margin-top: 10px;
+  margin-top: 0;
   padding-left: 0;
   list-style-type: none;
 }
@@ -86,7 +99,7 @@ ul li #slider {
   list-style-type: none;
 }
 .thumbnail-item {
-  padding-top: 15px;
+  padding-top: 0;
 }
 .slide-arrow {
   position: absolute;
@@ -131,17 +144,20 @@ ul li #slider {
   color: #262e73;
   padding-right: 60px;
 }
-#nav ul {
+#main table tr td a:hover {
+  color: #98be26;
+}
+#tab ul {
   margin: 0 0 20px 0;
   padding-left: 0;
   padding-bottom: 30px;
   list-style-type: none;
   text-align: center;
 }
-#nav .sintyaku a {
+#tab .sintyaku a {
   background-color: #262e73;
 }
-#nav ul li a {
+#tab ul li a {
   display: inline-block;
   color: white;
   float: left;
@@ -154,12 +170,14 @@ ul li #slider {
   padding-top: 15px;
   margin-bottom: 15px;
 }
-#nav ul li a:hover {
+#tab ul li a:hover {
+  background-color: #262e73;
+}
+#tab ul li a.current {
   background-color: #262e73;
 }
 #news dl  {
   width: 860px;
-
 }
 #news dl dt {
   float: left;
@@ -189,6 +207,12 @@ ul li #slider {
   padding-left: 20px;
   color: #262e73;
 }
+#news dl dd a:active {
+  background-color: #98be26;
+}
+#news dl dd a:hover {
+  color: #98be26;
+}
 .osirase {
   background-color: #04b4ec;
   color: white;
@@ -216,16 +240,46 @@ ul li #slider {
 #sub p a {
   color: #262e73;
 }
-#sub ul #servis li a {
-  display: block;
+#sub p a:hover {
+  color: #98be26;
+}
+#sub #servis li {
+  position: relative;
+  display: table-cell;
   float: left;
-  margin: 0;
-  padding-top: 35px;
-  height: 80px;
-  width: 113px;
+  height:110px;
+  width: 110px;
+  border-top: 10px solid white;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
   background-color: #288092;
+}
+#sub #servis li a {
+  display: table-cell;
+  height: 110px;
+  width: 110px;
   text-decoration: none;
-  border: solid;
+
+  color: white;
+  font-weight: bold;
+}
+#sub #servis li:hover {
+  opacity: 0.3;
+}
+#sub #servis li .a {
+  position: absolute;
+  left: 0;
+  top: 24%;
+}
+#sub #servis li .b {
+  position: absolute;
+  left: 0;
+  top: 37%;
+}
+#sub #servis li .c {
+  position: absolute;
+  left: 0;
+  top: 30%;
 }
 #sub ul {
   overflow: hidden;
@@ -237,7 +291,7 @@ ul li #slider {
 #sub ul li {
   width: 360px;
 }
-#sub ul li a {
+#login a, #kouza a, #kinyu a, #sagi a {
   overflow: hidden;
   display: block;
   color: white;
@@ -246,12 +300,23 @@ ul li #slider {
   height: 35px;
   text-decoration: none;
   font-weight: bold;
-}
-#login a, #kouza a, #kinyu a, #sagi a {
   background-color: #262e73;
 }
 #first a, #tv a, #kyouiku a {
+  overflow: hidden;
+  display: block;
+  color: white;
+  margin-top: 20px;
+  padding-top: 15px;
+  height: 35px;
+  text-decoration: none;
+  font-weight: bold;
   background-color: #98be26;
+}
+#login a:hover, #kouza a:hover,
+#kinyu a:hover, #sagi a:hover,
+#first a:hover, #tv a:hover, #kyouiku a:hover {
+  opacity: 0.3;
 }
 footer table {
   background-color: #dcdee6;
@@ -274,8 +339,11 @@ footer table tr td a {
   padding-top: 10px;
   color: #262e73;
 }
+footer table tr td a:hover {
+  color: #98be26;
+}
 footer ul {
-  margin: 0 0 20px 0;
+  margin: 30px 0 20px 0;
   padding-left: 0;
   padding-bottom: 30px;
   list-style-type: none;
