@@ -5,7 +5,7 @@ body {
   line-height: 1.5;
   margin: 0;
 }
-header, nav, #contents, #wrap, footer section, footer #foot {
+header, nav, #contents, #wrap, footer div table, footer #foot {
   margin: 0 auto 0 auto;
   width: 1260px;
 }
@@ -65,23 +65,28 @@ nav ul li a {
   border-top: 10px solid #262e73;
   font-weight: bold;
 }
-#wrap .thumbnail-list {
-  padding: 0;
-  margin: 0;
+#wrep ul li {
+  padding-left: 0;
 }
-#wrap ul {
-  margin: 0;
+ul #slider {
   padding-left: 0;
   list-style-type: none;
   text-align: center;
 }
-#wrap ul li {
-  float: left;
+ul li #slider {
+  padding-left: 0;
+}
+#thumbnail-list ul li {
+  margin-top: 10px;
+  padding-left: 0;
+  list-style-type: none;
 }
 #wrap ul li {
-  padding-top: 0;
-  margin-top: 0;
-  border-top: 0;
+  float: left;
+  list-style-type: none;
+}
+.thumbnail-item {
+  padding-top: 15px;
 }
 .slide-arrow {
   position: absolute;
@@ -185,17 +190,17 @@ nav ul li a {
   color: #262e73;
 }
 .osirase {
-  background-color: #15b4e5;
+  background-color: #04b4ec;
   color: white;
   width: 9em;
 }
 .campaign {
-  background-color: #c94e49;
+  background-color: #ec6c74;
   color: white;
   width: 9em;
 }
 .newsrelease {
-  background-color: #fbc529;
+  background-color: #fbb456;
   color: white;
   width: 9em;
 }
@@ -211,8 +216,8 @@ nav ul li a {
 #sub p a {
   color: #262e73;
 }
-#sub #servis a {
-  display: table-cell;
+#sub ul #servis li a {
+  display: block;
   float: left;
   margin: 0;
   padding-top: 35px;
@@ -283,6 +288,9 @@ footer ul li {
 }
 footer ul li a {
   color: #262e73;
+}
+footer ul li a:hover {
+  color: #98be26;
 }
 footer p {
   clear: both;
