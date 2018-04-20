@@ -100,6 +100,7 @@ ul li #slider {
 }
 .thumbnail-item {
   padding-top: 0;
+  margin-bottom: 30px;
 }
 .slide-arrow {
   position: absolute;
@@ -184,7 +185,7 @@ ul li #slider {
   clear: left;
   width: 120px;
   vertical-align: top;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 #news dl dt time {
   display: inline-block;
@@ -192,7 +193,7 @@ ul li #slider {
 #news dl dd {
   float: left;
   width: 700px;
-  margin-top: 40px;
+  margin-top: 30px;
   vertical-align: top;
 }
 #news dl dd span {
@@ -235,7 +236,7 @@ ul li #slider {
 }
 #sub h2 {
   color: navy;
-  margin-top: 50px;
+  margin-top: 17px;
 }
 #sub p a {
   color: #262e73;
@@ -283,7 +284,7 @@ ul li #slider {
 }
 #sub ul {
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 15px;
   padding-left: 0;
   list-style-type: none;
   text-align: center;
@@ -296,7 +297,7 @@ ul li #slider {
   display: block;
   color: white;
   margin-top: 20px;
-  padding-top: 15px;
+  padding-top: 10px;
   height: 35px;
   text-decoration: none;
   font-weight: bold;
